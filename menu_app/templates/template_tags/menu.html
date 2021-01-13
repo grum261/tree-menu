@@ -14,7 +14,8 @@
 <nav>
     <ul class="topmenu">
         <li>
-            <a href="{{ menu.get_full_path }}" class="active">{{ menu.name }}
+            <a href="{{ menu.get_url }}" class="active">
+                {{ menu.name }} {{ menu.items.all.count }}
                 <span class="fa fa-angle-down"></span>
             </a>
             <ul class="submenu">

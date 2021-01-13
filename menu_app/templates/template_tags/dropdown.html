@@ -1,7 +1,15 @@
 {% load draw_dropdown %}
-
-<div class="dropdown-content">
-    {% for item in item.items.all %}
-        <a href="{{ item.get_url }}">{{ item.name }}</a>
+<!--
+<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+    {% for second_level_item in first_level_item.items.all %}
+        <li>
+            <a class="dropdown-item" href="{{ second_level_item.get_url }}">{{ second_level_item.name }}</a>
+        </li>
     {% endfor %}
-</div>
+</ul>
+-->
+<ul class="submenu">
+    {% for second_level_item in first_level_item.items.self %}
+        <li><a href="{{ second_level_item.get_url }}">{{ second_level_item.name }}</a></li>
+    {% endfor %}
+</ul>
