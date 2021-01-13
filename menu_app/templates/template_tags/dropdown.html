@@ -1,0 +1,7 @@
+{% load draw_dropdown %}
+
+<div class="dropdown-content">
+    {% for item in item.items.all %}
+        <a href="{{ item.get_url }}">{{ item.name }}</a>
+    {% endfor %}
+</div>
