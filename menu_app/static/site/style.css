@@ -4,7 +4,13 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
 }
-nav {background: #413F3C;}
+
+nav {
+  width: 25%;
+  background: #78bcf3;
+  float: left;
+  display: inline-flex;
+}
 nav ul {
   margin: 0;
   padding: 0;
@@ -12,7 +18,6 @@ nav ul {
 }
 nav ul:after {
   content: "";
-  display: table;
   clear: both;
 }
 nav a {
@@ -34,7 +39,7 @@ nav a {
   letter-spacing: 2px;
 }
 .topmenu > li > a.active, 
-.submenu a:hover {color: #ddbe86;}
+.submenu a:hover {color: #000000;}
 .topmenu .fa, 
 .submenu .fa {
   margin-left: 5px;
@@ -52,14 +57,14 @@ nav a {
   opacity: 0; 
   transform-origin: 0% 0%;
   transform: rotateX(-90deg);
-  transition: .3s linear;  
+  transition: .3s linear;
 }
 .submenu li {position: relative;}
 .submenu li a {
   color: #282828;
   padding: 10px 20px;
   font-size: 13px;
-  border-bottom: 1px solid #CBCBCC;
+  border-bottom: 1px solid #cbcccc;
 }
 .submenu .submenu {
   position: absolute;
