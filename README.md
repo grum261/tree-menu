@@ -33,7 +33,7 @@ python manage.py createsuperuser
 ![](https://sun9-13.userapi.com/impf/EGCVVfLOp4ctnkOTQj74ap9j_jXcsQlur6BnLQ/8uc5ExV4OqI.jpg?size=1280x418&quality=96&sign=3e4c7e6e1a90293088cc23ba618faed7&type=album)
 
 ### 2.3 Добавляем template tag для отрисовки меню
-[home.html](home.html)
+[home.html](menu_app/templates/home.html)
 ```python
 {% extends 'base.html' %}
 {% load draw_menu %}
