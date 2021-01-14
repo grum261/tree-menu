@@ -3,7 +3,6 @@ from django.urls import reverse
 
 class AbstractModel(models.Model):
     is_visible = models.BooleanField(default=True, verbose_name='Visibility')
-    order = models.IntegerField(default=10, verbose_name='Order')
     date_created = models.DateTimeField(auto_now_add=True)
     date_updated = models.DateTimeField(auto_now=True)
 
@@ -42,7 +41,6 @@ class MenuItem(AbstractModel):
     class Meta:
         verbose_name = 'menu item'
         verbose_name_plural = 'menu items'
-        ordering = ('order', )
 
     def get_url(self):
         if self.named_url:
